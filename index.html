@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0F2C4C" />
+    <title>ApexResilience International</title>
+    <meta name="description" content="Strategic systems architecture for national emergency response." />
+    
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0F2C4C', // Deep Navy
+              secondary: '#1C3F66', // Royal Steel Blue
+              accent: '#F28C28', // Orange
+              metallic: '#BFC7D5', // Metallic Tone
+              base: '#F5F7FA', // Base Background
+              alt: '#E9EEF4', // Section Alternate
+              textPrimary: '#1C2B3A',
+              textSecondary: '#44576A',
+            },
+            boxShadow: {
+              'matte': '0 4px 6px -1px rgba(15, 44, 76, 0.05), 0 2px 4px -1px rgba(15, 44, 76, 0.03)',
+              'depth': '0 10px 15px -3px rgba(15, 44, 76, 0.1), 0 4px 6px -2px rgba(15, 44, 76, 0.05)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.3.1",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8?deps=react@18.3.1,react-dom@18.3.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#F5F7FA] text-[#1C2B3A] antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
