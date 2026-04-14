@@ -39,24 +39,6 @@ export const RiskCTA: React.FC = () => {
           >
             ApexResilience International
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="flex flex-wrap justify-center gap-6"
-          >
-            <Button
-              variant="accent"
-              className="px-10 py-5 rounded-full font-bold uppercase tracking-wider shadow-lg hover:shadow-accent/40 transition-all flex items-center gap-3"
-            >
-              Initiate Safety Assessment <ArrowRight size={20} />
-            </Button>
-            <button className="px-10 py-5 rounded-full font-bold uppercase tracking-wider border border-white/20 text-white hover:bg-white/5 transition-all">
-              Explore Full National Architecture
-            </button>
-          </motion.div>
         </div>
       </div>
     </section>

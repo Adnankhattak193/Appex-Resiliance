@@ -41,24 +41,6 @@ export const SystemArchitectureCTA: React.FC = () => {
             procurement into national resilience engineering — reshaping safety
             culture and securing safer futures by design.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="flex flex-wrap justify-center gap-6"
-          >
-            <Button
-              variant="accent"
-              className="px-10 py-5 rounded-full font-bold uppercase tracking-wider shadow-lg hover:shadow-accent/40 transition-all flex items-center gap-3"
-            >
-              Request Pilot Consultation <ArrowRight size={20} />
-            </Button>
-            <button className="px-10 py-5 rounded-full font-bold uppercase tracking-wider border border-white/20 text-white hover:bg-white/5 transition-all flex items-center gap-3">
-              Download Framework Brief <Download size={20} />
-            </button>
-          </motion.div>
         </div>
       </div>
     </section>
