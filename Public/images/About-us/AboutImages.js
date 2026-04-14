@@ -9,8 +9,8 @@ import aboutusverticle from "./aboutus-verticle.webp";
 
 // Team Members
 import arshad from "./arshad.webp";
-import aijaz from "./ijaz.webp";
-import nz from "./NZ.webp";
+import aijaz from "./Ijaz.webp";
+import nz from "./nz.webp";
 
 export {
   aboutus1,
