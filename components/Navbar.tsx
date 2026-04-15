@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { NAV_ITEMS } from "../constants";
 import Logo2 from "@/Public/images/Logo2.png";
-import logo from "@/Public/images/Logo3.webp";
+import logo from "@/Public/images/logo3.webp";
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
