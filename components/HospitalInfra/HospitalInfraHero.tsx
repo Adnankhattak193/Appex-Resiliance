@@ -14,13 +14,8 @@ export const HospitalInfraHero: React.FC = () => {
         <div className="absolute inset-0 opacity-60 mix-blend-overlay">
           {/* Abstract pattern or very muted visual */}
           <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url(${HospitalHeader})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
+            className="absolute inset-0 bg-top md:bg-center bg-contain md:bg-cover bg-no-repeat"
+            style={{ backgroundImage: `url(${HospitalHeader})` }}
           ></div>
         </div>
       </div>
@@ -31,12 +26,12 @@ export const HospitalInfraHero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[11px] font-bold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-5 sm:mb-6">
             <Activity size={12} />
             <span>Healthcare Architecture</span>
           </div>
 
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 leading-[1.1]">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-5 sm:mb-6 leading-[1.05]">
             <span className="">
               {" "}
               Hospital Infrastructure & Medical Equipment
@@ -44,7 +39,7 @@ export const HospitalInfraHero: React.FC = () => {
             <br />
           </h1>
 
-          <p className="text-gray-300 text-lg mb-10 max-w-2xl leading-relaxed font-light">
+          <p className="text-gray-300 text-base sm:text-lg mb-10 max-w-2xl leading-relaxed font-light">
             Hospitals function efficiently when infrastructure, workflow,
             equipment, and medical furniture operate as one system.
             ApexResilience designs complete or partial hospital environments,

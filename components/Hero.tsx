@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             alt="Infrastructure Background"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain object-top md:object-cover md:object-center"
           />
         </AnimatePresence>
 
@@ -51,14 +51,14 @@ export const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[11px] font-bold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-5 sm:mb-6">
             <Shield size={12} />
             <span>Institutional Resilience</span>
           </div>
 
-          <h1 className="text-white text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-5 sm:mb-6 leading-[1.05]">
             ApexResilience{" "}
-            <span className="text-accent underline decoration-accent/30 underline-offset-8">
+            <span className="text-accent text-3xl sm:text-4xl underline decoration-accent/30 underline-offset-8">
               International
             </span>
             <br />
@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
             Resilience by Design
           </h2>
 
-          {/* <p className="text-gray-300 text-lg mb-10 max-w-2xl leading-relaxed">
+          {/* <p className="text-gray-300 text-base sm:text-lg mb-10 max-w-2xl leading-relaxed font-light">
             We build modern response ecosystem -- structured, sustainable, and
             sovereign. Designing emergency architecture that saves lives.
           </p> */}
