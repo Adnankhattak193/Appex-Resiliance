@@ -17,6 +17,8 @@ export const SystemArchitectureHero: React.FC = () => {
             style={{
               backgroundImage: `url(${SystemArchitectureHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

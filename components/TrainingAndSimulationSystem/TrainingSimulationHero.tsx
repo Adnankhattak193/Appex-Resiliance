@@ -16,6 +16,8 @@ export const TrainingSimulationHero: React.FC = () => {
             style={{
               backgroundImage: `url(${TrainingHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

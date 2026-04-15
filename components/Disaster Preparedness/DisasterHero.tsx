@@ -1,73 +1,63 @@
 import React from "react";
 import { Button } from "../Button";
 import { Activity } from "lucide-react";
-
 import { motion } from "framer-motion";
 import { DisasterPreparednessHeader } from "@/Public/images/Headers/SubHeaders/SubHeader";
 
 export const DisasterHero: React.FC = () => {
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-24 pb-37 overflow-hidden bg-primary">
-      {/* Background Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 z-10 pointer-events-none bg-[linear-gradient(to_right,rgba(5,29,66,1)_0%,rgba(5,29,66,0.8)_18%,rgba(5,29,66,0.35)_32%,rgba(5,29,66,0.1)_45%,rgba(5,29,66,0.02)_55%,transparent_65%)]" />
-        <div className="absolute inset-0 opacity-60 mix-blend-overlay">
-          {/* Abstract pattern or very muted visual */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url(${DisasterPreparednessHeader})`,
-              backgroundSize: "cover",
-            }}
-          ></div>
-        </div>
+    <section className="relative overflow-hidden bg-primary">
+      {/* Mobile top image */}
+      <div className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:hidden">
+        <div
+          className="absolute inset-0 bg-no-repeat bg-center bg-cover"
+          style={{ backgroundImage: `url(${DisasterPreparednessHeader})` }}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(5,29,66,0.25)_0%,rgba(5,29,66,0.45)_45%,rgba(5,29,66,0.95)_100%)]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-20 w-full lg:grid lg:grid-cols-2 gap-12 items-center">
+      {/* Desktop background */}
+      <div className="absolute inset-0 z-0 hidden lg:block">
+        <div
+          className="absolute inset-0 bg-no-repeat bg-center bg-cover"
+          style={{ backgroundImage: `url(${DisasterPreparednessHeader})` }}
+        />
+        <div className="absolute inset-0 z-10 pointer-events-none bg-[linear-gradient(to_right,rgba(5,29,66,0.95)_0%,rgba(5,29,66,0.8)_22%,rgba(5,29,66,0.35)_42%,rgba(5,29,66,0.12)_60%,transparent_78%)]" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-20 max-w-7xl mx-auto px-5 sm:px-6 w-full lg:min-h-[95vh] lg:grid lg:grid-cols-2 gap-12 items-center pt-8 sm:pt-10 lg:pt-24 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
+          className="max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[11px] font-bold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-5 sm:mb-6">
             <Activity size={12} />
             <span>Operational Architecture</span>
           </div>
 
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 leading-[1.1]">
-            <span className=""> Disaster Preparedness & Prevention</span> <br />
-            <span className="text-accent text-4xl underline decoration-accent/30 underline-offset-8">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-5 sm:mb-6 leading-[1.05]">
+            <span>Disaster Preparedness & Prevention</span>
+            <br />
+            <span className="text-accent text-3xl sm:text-4xl underline decoration-accent/30 underline-offset-8">
               Resilience Before Crisis
             </span>
           </h1>
 
-          {/* <h2 className="text-white/80 text-lg md:text-xl font-medium mb-8 max-w-xl leading-relaxed">
-            National & Regional RUAAP Architecture
-          </h2> */}
-
-          <p className="text-gray-300 text-lg mb-10 max-w-2xl leading-relaxed font-light">
+          <p className="text-gray-300 text-base sm:text-lg mb-10 max-w-2xl leading-relaxed font-light">
             Disaster Preparedness & Prevention transforms risk awareness into
             structured national readiness. It aligns hazard identification,
             policy frameworks, institutional coordination, and sustainable
             planning to reduce loss before disasters strike. ApexResilience
             embeds preparedness within governance systems—turning reactive
-            response models into proactive resilience architecture. <br />
+            response models into proactive resilience architecture.
+            <br />
             <span className="font-bold mt-6 block">
               Prevent risk. Protect futures.
             </span>
           </p>
-
-          <div className="flex flex-wrap gap-4">
-            <Button
-              variant="accent"
-              className="px-8 py-4 rounded-full font-bold uppercase tracking-wider shadow-lg hover:shadow-accent/20 transition-all"
-            >
-              Request RUAAP Architecture Consultation
-            </Button>
-            <button className="px-8 py-4 rounded-full font-bold uppercase tracking-wider border border-white/20 text-white hover:bg-white/5 transition-all">
-              View Integrated Response Model
-            </button>
-          </div>
         </motion.div>
 
         {/* Right side: Architectural Grid Visual */}
@@ -82,16 +72,16 @@ export const DisasterHero: React.FC = () => {
               <div key={i} className="border-[0.5px] border-white/5"></div>
             ))}
           </motion.div>
+
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[120px]"></div>
 
-          {/* Subtle tech elements */}
           <div className="absolute top-1/4 right-1/4 w-32 h-[1px] bg-accent/20"></div>
           <div className="absolute bottom-1/4 left-1/4 w-32 h-[1px] bg-accent/20"></div>
           <div className="absolute top-1/4 left-1/2 w-[1px] h-32 bg-accent/20"></div>
         </div>
       </div>
 
-      {/* Subtle Curved Divider */}
+      {/* Subtle Curved Divider - unchanged */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
           className="relative block w-full h-[80px]"

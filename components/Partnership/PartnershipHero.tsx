@@ -17,6 +17,8 @@ export const PartnershipHero: React.FC = () => {
             style={{
               backgroundImage: `url(${PartnershipsHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

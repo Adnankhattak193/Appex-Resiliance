@@ -17,6 +17,8 @@ export const ResearchHero: React.FC = () => {
             style={{
               backgroundImage: `url(${ResearchHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

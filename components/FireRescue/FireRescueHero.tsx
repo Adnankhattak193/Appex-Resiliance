@@ -17,6 +17,8 @@ export const FireRescueHero: React.FC = () => {
             style={{
               backgroundImage: `url(${FireRescueHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

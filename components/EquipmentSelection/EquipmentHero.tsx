@@ -17,6 +17,8 @@ export const EquipmentHero: React.FC = () => {
             style={{
               backgroundImage: `url(${EquipmentPageHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

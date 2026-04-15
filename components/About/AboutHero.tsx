@@ -17,6 +17,8 @@ export const AboutHero: React.FC = () => {
             style={{
               backgroundImage: `url(${AboutUsHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

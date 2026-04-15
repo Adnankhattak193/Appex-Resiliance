@@ -17,6 +17,8 @@ export const EMSHero: React.FC = () => {
             style={{
               backgroundImage: `url(${EmsPageHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

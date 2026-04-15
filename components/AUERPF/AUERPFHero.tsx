@@ -17,6 +17,8 @@ export const AUERPFHero: React.FC = () => {
             style={{
               backgroundImage: `url(${AUERPFHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

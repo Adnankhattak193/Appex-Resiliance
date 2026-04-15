@@ -17,6 +17,8 @@ export const RUAAPHero: React.FC = () => {
             style={{
               backgroundImage: `url(${RUAAPHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

@@ -18,6 +18,8 @@ export const HospitalInfraHero: React.FC = () => {
             style={{
               backgroundImage: `url(${HospitalHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

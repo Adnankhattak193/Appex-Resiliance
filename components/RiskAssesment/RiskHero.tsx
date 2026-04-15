@@ -18,6 +18,8 @@ export const RiskHero: React.FC = () => {
             style={{
               backgroundImage: `url(${FireSafetyHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

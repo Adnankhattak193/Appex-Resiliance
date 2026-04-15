@@ -18,6 +18,8 @@ export const CommandControlHero: React.FC = () => {
             style={{
               backgroundImage: `url(${CommandHeader})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>
