@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { NAV_ITEMS } from "../constants";
 import Logo2 from "@/Public/images/Logo2.png";
+import logo from "@/Public/images/Logo3.webp";
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -91,7 +92,7 @@ export const Navbar: React.FC = () => {
           >
             <div className="h-14 flex items-center justify-center transition-transform duration-300 hover:scale-105">
               <img
-                src={Logo2}
+                src={logo}
                 alt="Apex Resilience Logo"
                 className="h-full w-auto object-contain"
               />
