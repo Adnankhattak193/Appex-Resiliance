@@ -7,9 +7,19 @@ import { CommandHeader } from "@/Public/images/Headers/SubHeaders/SubHeader";
 
 export const CommandControlHero: React.FC = () => {
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-24 pb-37 overflow-hidden bg-primary">
+    <section className="relative overflow-hidden bg-primary">
       {/* Background Overlay */}
-      <div className="absolute inset-0 z-0">
+      {/* Mobile image – visible below 760px */}
+      <div className="min-[760px]:hidden relative h-[280px]">
+        <div
+          className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+          style={{ backgroundImage: `url(${CommandHeader})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/30 to-primary/95" />
+      </div>
+
+      {/* Desktop background – hidden below 760px */}
+      <div className="absolute inset-0 z-0 hidden min-[760px]:block">
         <div className="absolute inset-0 z-10 pointer-events-none bg-[linear-gradient(to_right,rgba(5,29,66,1)_0%,rgba(5,29,66,0.8)_18%,rgba(5,29,66,0.35)_32%,rgba(5,29,66,0.1)_45%,rgba(5,29,66,0.02)_55%,transparent_65%)]" />
         <div className="absolute inset-0 opacity-60 mix-blend-overlay">
           {/* Abstract pattern or very muted visual */}
@@ -20,7 +30,7 @@ export const CommandControlHero: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-20 w-full lg:grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-5 sm:px-6 w-full min-[760px]:min-h-[95vh] min-[760px]:grid min-[760px]:grid-cols-2 gap-12 min-[760px]:items-center pt-8 min-[760px]:pt-24 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,7 +79,7 @@ export const CommandControlHero: React.FC = () => {
         </motion.div>
 
         {/* Right side: Architectural Grid Visual */}
-        <div className="hidden lg:block relative h-[500px]">
+        <div className="hidden min-[760px]:block relative h-[500px]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

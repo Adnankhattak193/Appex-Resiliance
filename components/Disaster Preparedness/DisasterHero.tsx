@@ -7,7 +7,7 @@ export const DisasterHero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-primary">
       {/* Mobile top image */}
-      <div className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:hidden">
+      <div className="min-[760px]:hidden relative h-[280px]">
         <div
           className="absolute inset-0 bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url(${DisasterPreparednessHeader})` }}
@@ -16,7 +16,7 @@ export const DisasterHero: React.FC = () => {
       </div>
 
       {/* Desktop background */}
-      <div className="absolute inset-0 z-0 hidden lg:block">
+      <div className="absolute inset-0 z-0 hidden min-[760px]:block">
         <div
           className="absolute inset-0 bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url(${DisasterPreparednessHeader})` }}
@@ -25,7 +25,7 @@ export const DisasterHero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-5 sm:px-6 w-full lg:min-h-[95vh] lg:grid lg:grid-cols-2 gap-12 items-center pt-8 sm:pt-10 lg:pt-24 pb-24">
+      <div className="relative z-20 max-w-7xl mx-auto px-5 sm:px-6 w-full min-[760px]:min-h-[95vh] min-[760px]:grid min-[760px]:grid-cols-2 gap-12 min-[760px]:items-center pt-8 min-[760px]:pt-24 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export const DisasterHero: React.FC = () => {
         </motion.div>
 
         {/* Right side: Architectural Grid Visual */}
-        <div className="hidden lg:block relative h-[500px]">
+        <div className="hidden min-[760px]:block relative h-[500px]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
