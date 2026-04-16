@@ -14,7 +14,7 @@ export const WhoWeAre: React.FC = () => {
           <div className="flex items-center gap-2 mb-4">
             <ShieldCheck className="text-accent" size={20} />
             <span className="text-secondary font-bold uppercase tracking-widest text-sm">
-              Who We Are
+              Amazing Solution
             </span>
           </div>
 
@@ -32,7 +32,7 @@ export const WhoWeAre: React.FC = () => {
 
             <div className="space-y-6 text-textSecondary text-lg leading-relaxed max-w-xl">
               <p>
-                A breakthrough in cost-effective urban emergency response 6
+                A breakthrough in cost-effective urban emergency response; 6
                 Tri-Wheel Ambulances for the cost of one conventional ambulance.
                 The Rapid Urban Ambulance Access Program (RUAAP) combines
                 Tri-Wheel Ambulances and EMS Motorbikes to deliver speed, deep

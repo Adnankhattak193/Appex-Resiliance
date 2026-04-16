@@ -63,9 +63,6 @@ export const StrategicCall: React.FC = () => {
             <h3 className="text-3xl font-bold text-primary">
               Start Consultation
             </h3>
-            <p className="text-textSecondary text-sm mt-2">
-              Generals and Ministers trust our architecture.
-            </p>
           </div>
 
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
