@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/30 border border-secondary/50 text-accent text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-5 sm:mb-6">
             <Shield size={12} />
-            <span>Institutional Resilience</span>
+            <span>Sustainable Solutions</span>
           </div>
 
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-5 sm:mb-6 leading-[1.05]">

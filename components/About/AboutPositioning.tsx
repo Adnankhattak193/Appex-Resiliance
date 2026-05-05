@@ -49,7 +49,7 @@ export const AboutPositioning: React.FC = () => {
               Our approach ensures infrastructure readiness, operational
               continuity, and long-term compliance. We believe resilience is not
               only infrastructure — it is mindset, governance, and structured
-              capability
+              capability.
             </p>
           </div>
         </motion.div>

@@ -15,7 +15,7 @@ import {
 const nodes = [
   { id: "ems", label: "We design them", icon: PenTool },
   { id: "fire", label: "We architect them", icon: DraftingCompass },
-  { id: "dispatch", label: "We structure them.", icon: DraftingCompass },
+  { id: "dispatch", label: "We structure them", icon: DraftingCompass },
   { id: "command", label: "We implement them", icon: Settings },
   { id: "training", label: "We transfer them", icon: Truck },
 ];

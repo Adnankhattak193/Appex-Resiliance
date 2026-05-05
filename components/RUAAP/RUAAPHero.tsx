@@ -58,13 +58,13 @@ export const RUAAPHero: React.FC = () => {
 
           <p className="text-gray-300 text-base sm:text-lg mb-10 max-w-2xl leading-relaxed font-light">
             Rapid Urban Ambulance Access Program (RUAAP) is ApexResilience’s
-            breakthrough urban EMS architecture designed for Africa’s congested
-            cities. Blending tri-wheel ambulances, EMS motorbikes, and
-            structured command integration under the AUER-PF (Africa Urban
-            Emergency Response – Pilot Framework), RUAAP delivers deep access,
-            faster response, and cost-effective scalability. It transforms
-            emergency mobility from reactive dispatch into engineered,
-            governance-aligned urban life-saving reach.
+            breakthrough in urban EMS architecture, designed for congested
+            cities in Africa and developing countries. Blending tri-wheel
+            ambulances, EMS motorbikes, and structured command integration under
+            the AUER-PF (Africa Urban Emergency Response – Pilot Framework),
+            RUAAP delivers deep access, faster response, and cost-effective
+            scalability. It transforms emergency mobility from reactive dispatch
+            into engineered, governance-aligned urban life-saving reach.
           </p>
 
           <div className="flex flex-wrap gap-4">

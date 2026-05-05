@@ -58,7 +58,7 @@ const services = [
     id: "ocean-freight",
     label: "Integrated Command & Control Architecture",
     icon: Ship,
-    title: "Ocean Freight Solutions",
+    title: "Integrated Command & Control Architecture",
     // subtitle: "Scalable sea freight for bulk international trade.",
     // description:
     //   "Our ocean freight services support full-container-load (FCL) and less-than-container-load (LCL) shipments, optimized for cost efficiency and transit reliability across major global ports.",
@@ -83,7 +83,7 @@ const services = [
     id: "road-transport",
     label: "Communication, Monitoring & Performance Intelligence",
     icon: Truck,
-    title: "Road Transport Solutions",
+    title: "Communication, Monitoring & Performance Intelligence",
     // subtitle:
     //   "Flexible overland freight across domestic and cross-border routes.",
     // description:
@@ -109,7 +109,7 @@ const services = [
     id: "warehousing",
     label: "Professional Training & Institutional Capacity Development",
     icon: Warehouse,
-    title: "Warehousing & Distribution",
+    title: "Professional Training & Institutional Capacity Development",
     // subtitle: "Strategic storage and fulfillment infrastructure.",
     // description:
     //   "Our warehousing network provides scalable short- and long-term storage solutions with advanced inventory management systems, enabling efficient pick-and-pack operations and distribution for all business sizes.",
@@ -134,7 +134,7 @@ const services = [
     id: "customs-clearance",
     label: "Pilot Implementation, Test-Run & Scalable Expansion",
     icon: FileCheck,
-    title: "Customs Clearance",
+    title: "Pilot Implementation, Test-Run & Scalable Expansion",
     // subtitle: "Expert trade compliance and regulatory navigation.",
     // description:
     //   "Our specialists manage the full spectrum of customs processes — from classification and valuation to duty optimization and regulatory compliance — minimizing delays and ensuring smooth border crossings.",
@@ -193,7 +193,7 @@ export const EMSServices: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="mt-4 text-textSecondary text-lg max-w-2xl mx-auto"
           >
-            End-to-end Emergency Management solutions.
+            End-to-end Emergency Management solutions
           </motion.p>
         </div>
 

@@ -54,13 +54,17 @@ export const AboutHero: React.FC = () => {
           </h2>
 
           <p className="text-gray-300 text-base sm:text-lg mb-10 max-w-2xl leading-relaxed font-light">
-            ApexResilience International is a systems engineering and
-            implementation firm specializing in the design and deployment of
-            integrated civil Emergency Response & Fire Safety architectures. We
-            work with governments, ministries, civil protection authorities, and
-            institutional stakeholders to build structured, scalable, and
-            sustainable emergency systems — combining operational capability
-            with governance integrity.
+            ApexResilience International is an experienced organization
+            specializing in the design and deployment of integrated civil
+            Emergency Rescue & Response and Fire Safety systems. We work with
+            governments, ministries, public & private institutions and
+            stakeholders to build structured, scalable, and sustainable
+            emergency systems — combining operational capability with governance
+            integrity.{" "}
+            <span className="font-bold">
+              We engineer systems and make them sustainable through performance
+              intelligence.
+            </span>
           </p>
 
           <div className="flex flex-wrap gap-4">

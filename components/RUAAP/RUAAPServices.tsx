@@ -37,7 +37,7 @@ const services = [
     features: [
       {
         icon: Globe,
-        text: "RUAAP is engineered for congested African cities where conventional ambulances lose critical time. The model combines tri-wheel ambulances for narrow urban penetration with EMS motorbikes for rapid first response stabilization.",
+        text: "RUAAP is engineered for congested African and developing regions’ cities where conventional ambulances lose critical time. The model combines tri-wheel ambulances for narrow urban penetration with EMS motorbikes for rapid first response stabilization",
       },
       {
         icon: Clock,

@@ -70,11 +70,11 @@ export const WhoWeAre: React.FC = () => {
           {/* Floating Badge */}
           <div className="absolute top-10 right-0 bg-accent text-white p-6 rounded-2xl shadow-lg animate-bounce duration-[3000ms]">
             <Target size={32} className="mb-2" />
-            <div className="font-bold text-2xl">100%</div>
+            <div className="font-bold text-2xl">Speed</div>
             <div className="text-sm font-medium">
-              Sovereign
+              Access
               <br />
-              Ownership
+              Impact
             </div>
           </div>
         </div>

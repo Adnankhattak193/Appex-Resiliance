@@ -53,7 +53,7 @@ export const Mission: React.FC = () => {
           <div className="flex items-center gap-2 mb-6">
             <ShieldCheck className="text-accent" size={20} />
             <span className="text-secondary font-bold uppercase tracking-widest text-sm">
-              Our Mission
+              A Turn-Key Solution
             </span>
           </div>
 

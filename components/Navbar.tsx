@@ -42,11 +42,11 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center space-x-8">
             <span className="flex items-center gap-2 group cursor-pointer hover:text-accent transition-colors">
               <Phone size={13} className="text-accent" />
-              <span>+1 (202) 555-0199</span>
+              <span>+92 347 0276700</span>
             </span>
             <span className="flex items-center gap-2 group cursor-pointer hover:text-accent transition-colors">
               <Mail size={13} className="text-accent" />
-              <span>strategy@apexresilience.global</span>
+              <span>info@apexresilience.org</span>
             </span>
           </div>
           <div className="flex items-center space-x-6">

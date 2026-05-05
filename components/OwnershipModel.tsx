@@ -33,7 +33,7 @@ export const OwnershipModel: React.FC = () => {
         {/* Bottom Text */}
         <div className="max-w-3xl mx-auto">
           <p className="text-xl text-textSecondary font-medium leading-relaxed border-b border-metallic/30 pb-10">
-            We enable governments to establish:
+            We professionally help in:
           </p>
         </div>
 

@@ -1,9 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./Button";
 import { PlayCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const StrategicCall: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    const data = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    const formattedMessage =
+      `Name: ${data.name}\nEmail: ${data.email}\nSubject: ${data.subject}\nMessage: ${data.message}`.trim();
+    // In a real application, you would handle form submission here
+    console.log("Form submitted:", formattedMessage);
+    const phoneNumber = "923470276700";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(formattedMessage)}`;
+    window.open(whatsappUrl, "_blank");
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
   return (
     <section className="relative py-32 bg-primary overflow-hidden">
       {/* Background Image */}
@@ -65,25 +100,39 @@ export const StrategicCall: React.FC = () => {
             </h3>
           </div>
 
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">
+                <label
+                  htmlFor="name"
+                  className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1"
+                >
                   Full Name
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g. John Doe"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  id="name"
+                  name="name"
                   className="w-full px-5 py-3.5 rounded-xl border border-gray-100 bg-gray-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all"
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">
+                <label
+                  htmlFor="email"
+                  className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1"
+                >
                   Professional Email
                 </label>
                 <input
                   type="email"
-                  placeholder="name@organization.gov"
+                  placeholder="Your email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  id="email"
+                  name="email"
                   className="w-full px-5 py-3.5 rounded-xl border border-gray-100 bg-gray-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all"
                 />
               </div>
@@ -94,7 +143,11 @@ export const StrategicCall: React.FC = () => {
                 Organization / Department
               </label>
               <input
+                value={formData.subject}
+                onChange={handleChange}
                 type="text"
+                id="subject"
+                name="subject"
                 placeholder="e.g. Ministry of Interior"
                 className="w-full px-5 py-3.5 rounded-xl border border-gray-100 bg-gray-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all"
               />
@@ -120,10 +173,6 @@ export const StrategicCall: React.FC = () => {
                 Schedule Briefing
               </Button>
             </div>
-
-            <p className="text-center text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-4">
-              Strict confidentiality assured for all governmental inquiries.
-            </p>
           </form>
         </motion.div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Network } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const RUAAPStrategy: React.FC = () => {
   return (
@@ -19,7 +20,11 @@ export const RUAAPStrategy: React.FC = () => {
             </div>
 
             <h2 className="text-primary text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              RUAAP & AUER – PF <br />
+              RUAAP &{" "}
+              <span className=" underline decoration-accent/30 underline-offset-8 text-4xl">
+                <Link to="/auer-pf">AUER – PF</Link>
+              </span>
+              <br />
               <span className="text-accent underline decoration-accent/30 underline-offset-8 text-4xl">
                 An Out of the Box Approach
               </span>
@@ -28,9 +33,9 @@ export const RUAAPStrategy: React.FC = () => {
             <div className="space-y-6 text-textSecondary text-lg leading-relaxed max-w-xl">
               <p>
                 Rapid Urban Ambulance Access Program (RUAAP) introduces a new
-                approach to urban EMS in Africa — engineered for deeper access,
-                faster response, broader coverage, and significantly lower cost
-                per life saved.
+                approach to urban EMS in Africa & developing regions —
+                engineered for deeper access, faster response, broader coverage,
+                and significantly lower cost per life saved.
               </p>
               <p>
                 Built on tri-wheel ambulances and EMS motorbike integration, it

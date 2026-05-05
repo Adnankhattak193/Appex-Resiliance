@@ -64,18 +64,6 @@ export const CommandControlHero: React.FC = () => {
             delivering structured command, measurable efficiency, and scalable
             resilience. From fragmented reaction to unified national command..!!
           </p>
-
-          <div className="flex flex-wrap gap-4">
-            <Button
-              variant="accent"
-              className="px-8 py-4 rounded-full font-bold uppercase tracking-wider shadow-lg hover:shadow-accent/20 transition-all"
-            >
-              Request RUAAP Architecture Consultation
-            </Button>
-            <button className="px-8 py-4 rounded-full font-bold uppercase tracking-wider border border-white/20 text-white hover:bg-white/5 transition-all">
-              View Integrated Response Model
-            </button>
-          </div>
         </motion.div>
 
         {/* Right side: Architectural Grid Visual */}

@@ -66,7 +66,7 @@ export const WhyApex: React.FC = () => {
               "Systems Engineering Approach — not fragmented procurement",
               "Governance + Operational Balance",
               "Urban-Focused Innovation",
-              "Data-Driven Planning &amp; Performance Intelligence",
+              "Data Driven Planning & Performance Intelligence",
             ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-4">
                 <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">

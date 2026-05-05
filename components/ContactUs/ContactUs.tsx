@@ -103,11 +103,9 @@ export const ContactUs: React.FC = () => {
                       Global Headquarters
                     </h3>
                     <p className="text-textSecondary leading-relaxed">
-                      123 Executive Plaza
+                      Dubai – UAE
                       <br />
-                      Suite 500
-                      <br />
-                      Washington, D.C. 20004
+                      Karachi – Pakistan
                     </p>
                   </div>
                 </div>
@@ -121,9 +119,9 @@ export const ContactUs: React.FC = () => {
                       Phone Number
                     </h3>
                     <p className="text-textSecondary leading-relaxed">
-                      Main: +1 (202) 555-0199
+                      +923 47 027 6700 (Pak)
                       <br />
-                      Support: +1 (202) 555-0198
+                      +971 56 238 9733 (UAE)
                     </p>
                   </div>
                 </div>
@@ -137,9 +135,9 @@ export const ContactUs: React.FC = () => {
                       Email Address
                     </h3>
                     <p className="text-textSecondary leading-relaxed">
-                      strategy@apexresilience.global
+                      info@apexresilience.org
                       <br />
-                      info@apexresilience.global
+                      naeem@apexresilience.org
                     </p>
                   </div>
                 </div>
@@ -152,11 +150,7 @@ export const ContactUs: React.FC = () => {
                     <h3 className="text-xl font-bold text-primary mb-2">
                       Hours of Operation
                     </h3>
-                    <p className="text-textSecondary leading-relaxed">
-                      Monday - Friday
-                      <br />
-                      08:00 AM - 06:00 PM EST
-                    </p>
+                    <p className="text-textSecondary leading-relaxed">24/7</p>
                   </div>
                 </div>
               </div>
