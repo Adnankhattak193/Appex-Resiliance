@@ -34,7 +34,7 @@ export const ContactUs: React.FC = () => {
       `Name: ${data.name}\nEmail: ${data.email}\nSubject: ${data.subject}\nMessage: ${data.message}`.trim();
     // In a real application, you would handle form submission here
     console.log("Form submitted:", formattedMessage);
-    const phoneNumber = "923188644065";
+    const phoneNumber = "923470276700";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(formattedMessage)}`;
     window.open(whatsappUrl, "_blank");
     setFormData({ name: "", email: "", subject: "", message: "" });
