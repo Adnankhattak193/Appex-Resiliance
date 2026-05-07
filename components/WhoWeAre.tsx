@@ -1,9 +1,10 @@
 import React from "react";
 import { Button } from "./Button";
-import { ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import { Target } from "lucide-react";
 import { main3, main4 } from "@/Public/images/main/main";
+import { Link } from "react-router-dom";
 
 export const WhoWeAre: React.FC = () => {
   return (
@@ -41,6 +42,16 @@ export const WhoWeAre: React.FC = () => {
                 systems that are economical, quickly deployable, and
                 operationally transformative.
               </p>
+              <div className="flex flex-col items-start pt-2">
+           <Link to="/services/ruaap">
+            <Button
+              variant="accent"
+              className="rounded-full px-8 shadow-lg hover:shadow-xl"
+            >
+              About RUAAP <ArrowRight size={16} className="ml-2" />
+            </Button>
+           </Link>
+          </div>
             </div>
           </motion.div>
         </div>

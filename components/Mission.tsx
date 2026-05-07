@@ -3,6 +3,7 @@ import { Button } from "./Button";
 import { ShieldCheck, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { main1, main2 } from "@/Public/images/main/main";
+import { Link } from "react-router-dom";
 
 export const Mission: React.FC = () => {
   return (
@@ -78,12 +79,14 @@ export const Mission: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-start pt-2">
+           <Link to="/about">
             <Button
               variant="accent"
               className="rounded-full px-8 shadow-lg hover:shadow-xl"
             >
               About US <ArrowRight size={16} className="ml-2" />
             </Button>
+           </Link>
           </div>
         </motion.div>
       </div>
