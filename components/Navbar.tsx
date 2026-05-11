@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Nav - Clean Text Style */}
-          <div className="hidden lg:flex items-center space-x-10">
+          <div className="hidden items-center space-x-10">
             {NAV_ITEMS.map((item) => {
               const isHash = item.href.startsWith("#");
               const hasSubmenu = "submenu" in item && item.submenu;
@@ -172,7 +172,7 @@ export const Navbar: React.FC = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="lg:hidden text-white p-2"
+            className="text-white p-2"
             onClick={() => setIsMobileOpen(!isMobileOpen)}
           >
             {isMobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -181,7 +181,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMobileOpen && (
-          <div className="lg:hidden bg-primary absolute w-full border-t border-white/10 shadow-xl">
+          <div className="bg-primary absolute w-full border-t border-white/10 shadow-xl z-50">
             <div className="px-6 py-8 flex flex-col space-y-6">
               {NAV_ITEMS.map((item) => {
                 const isHash = item.href.startsWith("#");

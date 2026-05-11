@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "../Button";
-import logo from "@/Public/images/Logo.png";
+import logo from "@/Public/images/Logo.webp";
 
 export const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({

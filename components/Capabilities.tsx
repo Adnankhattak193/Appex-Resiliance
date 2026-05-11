@@ -245,9 +245,9 @@ export const Capabilities: React.FC = () => {
         <div className="text-center mt-12">
           <p className="text-sm text-textSecondary">
             Ready to transform national infrastructure?{" "}
-            <a href="#" className="text-accent font-bold underline">
+            <Link to="/contact" className="text-accent font-bold underline">
               Contact us today.
-            </a>
+            </Link>
           </p>
         </div>
       </div>
